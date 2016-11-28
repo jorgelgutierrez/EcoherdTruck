@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/ecoherd"
+    tools:context="nextu.android.certificacion.ecoherdtruck.MainActivity"
+    android:orientation="vertical">
+
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_iniciar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/colortoggleterminado"
+        android:textColor="@android:color/white"
+        android:onClick="ConsultarCamionParaIniciar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_id"
+        android:inputType="number"
+        android:hint="Id"
+        android:gravity="bottom"
+        android:layout_above="@+id/tb_iniciar"
+        android:background="@android:color/darker_gray"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textColorLink="@color/colorPrimary" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_truck"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/imageView" />
+
+</RelativeLayout>
